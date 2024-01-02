@@ -5,14 +5,21 @@
 .bg-color-name-title {
     background-color: #676767;
 }
-.bg-color-three-reasons{
+
+.bg-color-three-reasons {
     background-color: #fff;
 }
-.bg-color-personal-info{
+
+.bg-color-personal-info {
     background-color: #f4f4f4;
 }
-.bg-color-work-history{
+
+.bg-color-work-history {
     background-color: #9b59b6;
+}
+
+.bg-color-contact {
+    background-color: #fff;
 }
 
 .ui-menu-color-home {
@@ -29,21 +36,6 @@
 
 .ui-menu-color-download {
     background-color: #525252;
-}
-.row-table{
-    display: table;
-}
-.section-column{
-    display: table-cell;
-    padding: 0 30px 30px;
-    float: none;
-}
-.history-heading,
-.section-heading {
-    font-family: "Exo", sans-serif;
-    font-weight: 300;
-    margin-top: 25px;
-    margin-bottom: 40px;
 }
 
 /* ----------------------------------------Special paddings/margins/text */
@@ -68,20 +60,23 @@ h4 {
 .inline-block {
     display: inline-block;
 }
-.row-table{
+
+.row-table {
     display: table;
 }
-.section-column{
+
+.section-column {
     display: table-cell;
     padding: 0 30px 30px;
     float: none;
 }
-.section-heading{
-    font-family: "Exo", sans serif;
+
+.history-heading,
+.section-heading {
+    font-family: "Exo", sans-serif;
     font-weight: 300;
     margin-top: 25px;
     margin-bottom: 40px;
-
 }
 
 /*--------------------------------------------Heading*/
@@ -185,23 +180,27 @@ footer {
     min-height: 120px;
     margin: 0;
 }
-.cv-pdf i{
+
+.cv-pdf i {
     font-size: 18px;
-    color:#fafafa;
+    color: #fafafa;
     text-align: center;
     padding-left: 5px;
     transition: all 0.35s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;
     -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
 }
-.cv-pdf i:hover{
+
+.cv-pdf i:hover {
     color: #e84610;
 }
-.social-links{
-    padding-bottom: 15px;
 
+.social-links {
+    padding-bottom: 15px;
 }
-.social-links li a i{
+
+.social-links li a i {
     width: 32px;
     height: 32px;
     padding: 12px 0;
@@ -214,16 +213,17 @@ footer {
     transition: all 0.35s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;
     -webkit-transition: all 0.35s ease-in-out;
-
-
+    -o-transition: all 0.35s ease-in-out;
 }
-.social-links li a i:hover{
-    background: #e84610 ;
-}
-#footer-details{
-   padding: 20px;
 
+.social-links li a i:hover {
+    background: #e84610;
 }
+
+#footer-details {
+    padding: 20px;
+}
+
 /* ----------------------------------------Three Reasons */
 
 .three-reasons-icon {
@@ -235,36 +235,41 @@ footer {
     margin-bottom: 15px;
 }
 
-/*------------------------------------------Personal Info */
+/* ----------------------------------------Personal Info */
 
 .personal-info-item {
     margin-bottom: 20px;
     display: block;
-    clear:both;
+    clear: both;
 }
+
 .personal-info-item .key,
-.personal-info-item .value{
+.personal-info-item .value {
     padding-right: 8px;
     display: inline-block;
 }
+
 .personal-info-item .key p,
 .personal-info-item .value p {
     margin: 0;
-
 }
-.personal-info-item .key{
+
+.personal-info-item .key {
     width: 30%;
     margin-right: 21px;
     padding-top: 2px;
     vertical-align: top;
 }
+
 .personal-info-item .key p {
     font-weight: 700;
 }
-.personal-info-item .value{
+
+.personal-info-item .value {
     position: relative;
     width: 60%;
 }
+
 /* ----------------------------------------Skills */
 
 .progress {
@@ -285,6 +290,7 @@ footer {
 .progress-section {
     margin: 40px 20px;
 }
+
 /* ----------------------------------------Work History */
 
 .history-heading {
@@ -333,4 +339,35 @@ footer {
     margin-bottom: 30px;
 }
 
+/* ----------------------------------------Contact Form */
 
+.contact-heading {
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.center-form {
+    padding-top: 10px;
+    margin: 0 auto;
+    max-width: 70%;
+}
+
+button[type="submit"] {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    color: #fafafa;
+    background-color: #e84610;
+}
+
+/* ----------------------------------------Media Queries */
+
+@media(min-width: 992px) {
+    .center-form {
+        padding-top: 30px;
+        min-height: 240px;
+        margin: 0 auto;
+        max-width: 50%;
+    }
+}
